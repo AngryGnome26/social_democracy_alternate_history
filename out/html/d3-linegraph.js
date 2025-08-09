@@ -16,13 +16,13 @@ function addMonths(date, months) {
 d3.linegraph = function(noTicks, noDots, parties, partyColors, partyNames, dataMax, dataMin, additionalMonths) {
     /* params */
     if (!parties) {
-        parties = ['spd', 'kpd', 'ddp', 'z', 'dvp', 'dnvp', 'nsdap', 'other'];
+        parties = ['psoe', 'cnt', 'prrs', 'prr', 'ar', 'erc', 'ceda', 'other'];
     }
     if (!partyColors) {
-        partyColors = {'spd': '#E3000F', 'kpd': '#8B0000', 'ddp': '#DCCA4A', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0'};
+        partyColors = {'psoe': '#E3000F', 'cnt': '#8B0000', 'prrs': '#DCCA4A', 'prr': '#000', 'ar': '#D5AC27', 'erc': '#3f7bc1', 'ceda': '#954B00', 'other': '#a0a0a0'};
     }
     if (!partyNames) {
-        partyNames = {'spd': 'SPD', 'kpd': 'KPD', 'ddp': 'DDP', 'z': 'Z + BVP', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others'};
+        partyNames = {'psoe': 'PSOE', 'cnt': 'CNT', 'prrs': 'PRRS', 'prr': 'PRR', 'ar': 'AR', 'erc': 'ERC', 'ceda': 'CEDA', 'other': 'Others'};
     }
     if (!additionalMonths) {
         additionalMonths = 10;
